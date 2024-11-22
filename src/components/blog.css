@@ -1,0 +1,83 @@
+.blog-card {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensures image doesn't overflow */
+}
+
+.blog-card-left {
+    width: 60%; /* Image and description section */
+    margin-right: 20px; /* Space between columns */
+}
+
+.blog-card-right {
+    width: 40%; /* Favorite things and additional info section */
+}
+
+.blog-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.blog-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.blog-card-description {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.favorite-things {
+    margin-top: 20px;
+}
+
+.favorite-things h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.favorite-things ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.favorite-things li {
+    font-size: 16px;
+}
+
+.additional-info {
+    margin-top: 20px;
+}
+
+.additional-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.additional-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    /* On smaller screens, stack the content vertically */
+    .blog-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card-left,
+    .blog-card-right {
+        width: 100%; /* Full width for each section */
+        margin-right: 0; /* Remove space between sections */
+    }
+}
